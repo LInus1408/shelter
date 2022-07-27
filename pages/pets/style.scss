@@ -1,0 +1,258 @@
+@import '../../assets/modules/normalize.css';
+@import '../../assets/modules/fonts.css';
+@import '../../assets/modules/modules.scss';
+@import '../../assets/modules/layout/header.scss';
+@import '../../assets/modules/layout/footer.scss';
+@import '../../assets/modules/layout/modal.scss';
+
+// Start style header
+
+header  {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: $color3;
+}
+.header_logo {
+  padding-top: 7px;
+}
+.header_logo__desc {
+  color: $color8;
+}
+.header_logo__title {
+  color: $color8;
+}
+.header_nav {
+  margin-top: 10px;
+  @media screen and (max-width: 767px) {
+    background: #292929;
+    margin-top: 0px;
+  }
+}
+.header_nav_list {
+  @media screen and (max-width: 767px) {
+    background: #292929;
+  }
+}
+.header_nav__item_link {
+  color: $color8;
+}
+.burger__line {
+  border-color: $color8;
+}
+.burger_show {
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
+  }
+}
+// end style header
+
+
+// style start main
+.main {
+  padding-top: 120px;
+}
+.our-friends {
+  transform: translate(0px, 0px);
+  background-color: $color10;
+}
+.wrapper_our-friends {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 100px;
+  @media screen and (max-width: 1279px) {
+    max-width: 768px;
+    padding-bottom: 76px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 300px;
+    font-size: 25px;
+    padding-bottom: 44px;
+  }
+}
+.our-friends_title {
+  @include font($font-family1, normal, 400, 35px, 45.5px, $color8);
+  max-width: 400px;
+  margin: auto;
+  letter-spacing: 2px;
+  padding-top: 81px;
+  padding-bottom: 58px;
+  @media screen and (max-width: 1279px) {
+    padding-bottom: 28px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+    line-height: 32.5px;
+    max-width: 300px;
+    padding-top: 42px;
+    letter-spacing: 1.5px;
+    padding-bottom: 41px;
+  }
+}
+.our-friends_title {
+  span {
+    display: block;
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      width: auto;
+    }
+  }
+}
+.our-friends_title__1 {
+  padding-left: 60px;
+  @media screen and (max-width: 767px) {
+    padding-left: 49px;
+  }
+}
+.our-friends_title__2 {
+  padding-left: 2px;
+  @media screen and (max-width: 767px) {
+    padding-left: 8px;
+  }
+}
+.our-friends_cards {
+  @include flex1(100%, space-between);
+  flex-wrap: nowrap;
+  padding-bottom: 62px;
+}
+
+.card {
+  background-color: $color1;
+}
+
+.card:nth-child(4) {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.card:nth-child(5) {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.card:nth-child(6) {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.card:nth-child(7) {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.card:nth-child(8) {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+.cards_items_container {
+  @include flex1(100%, space-between);
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 30px 0px;
+  @media screen and (max-width: 1279px) {
+    max-width: 100%;
+    gap: 30px 40px;
+    justify-content: center;
+  }
+}
+.card-pic {
+  width: 270px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin-bottom: 30px;
+}
+// .card:nth-child(1) .card-pic:nth-child(1) {
+//   background-image: url('../../assets/images/pets-katrine.png');
+// }
+
+// .card:nth-child(2) .card-pic:nth-child(1) {
+//   background-image: url('../../assets/images/pets-jennifer.png');
+// }
+// .card:nth-child(3) .card-pic:nth-child(1) {
+//   background-image: url('../../assets/images/pets-woody.png');
+// }
+// .card:nth-child(4) .card-pic:nth-child(1) {
+//   background-image: url('../../assets/images/sophie.png');
+// }
+// .card:nth-child(5) .card-pic:nth-child(1) {
+//   background-image: url('../../assets/images/pets-timmy.png');
+// }
+// .card:nth-child(6) .card-pic:nth-child(1) {
+//   background-image: url('../../assets/images/pets-charly.png');
+// }
+// .card:nth-child(7) .card-pic:nth-child(1) {
+//   background-image: url('../../assets/images/pets-scarlet.png');
+// }
+// .card:nth-child(8) .card-pic:nth-child(1) {
+//   background-image: url('../../assets/images/kate.png');
+// }
+.card-title {
+  @include font($font-family1, normal, 400, 20px, 22.72px, $color8);
+  text-align: center;
+  letter-spacing: 1.2px;
+  padding-bottom: 31px;
+  padding-left: 2px;
+  @media screen and (max-width: 1279px) {
+    padding-bottom: 30px;
+  }
+}
+.card:hover {
+  cursor: pointer;
+    .btn_2 {
+      background-color: $color6;
+    }
+    .card-pic {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+}
+
+
+.scroll {
+  display: flex;
+  margin: auto;
+  width: 340px;
+  justify-content: space-between;
+  margin-top: -3px;
+  @media screen and (max-width: 1279px) {
+    margin-top: -21px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 300px;
+    margin-top: -19px;
+  }
+}
+.scroll_circle {
+  width: 52px;
+  height: 52px;
+  @include font($font-family1, normal, 400, 20px, 47px, $color7);
+  letter-spacing: 1px;
+  border: 2px solid $color5;
+  box-sizing: border-box;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+    &:hover {
+      background-color: #f9cdb3;
+    }
+}
+.scroll_circle:nth-child(3) {
+  background-color: #f9cdb3;
+}
+.scroll_disable {
+  color: $color4;
+  border: 2px solid $color4;
+  pointer-events: none;
+}
+.header_active {
+  background-color: inherit;
+}
+.header_logo_hidden {
+  display: none;
+}
+
+

@@ -1,0 +1,174 @@
+.modal-window {
+  position: fixed;
+  max-height: 552px;
+  transform: translate(0px, -200%);
+  z-index: 999;
+  top: 16.8%;
+  left: 14.9%;
+  right: 11.5%;
+  @media screen and (max-width: 1279px) {
+    top: 25.8%;
+    left: 8.9%;
+    right: 3.5%;
+  }
+  @media screen and (max-width: 767px) {
+    top: 20.8%;
+    left: 12.9%;
+    right: 3.5%;
+  }
+}
+.modal-window__changed {
+  transform: translate(0px, 0%);
+}
+
+.potap_close {
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  margin-left: auto;
+  background: url('../../assets/svg/close.svg');
+  background-repeat: no-repeat;
+  background-position: center 19px;
+  cursor: pointer;
+}
+.potap_close:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.potap_close_active {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.potap_content {
+  background: #FAFAFA;
+  margin-right: 42px;
+  border-radius: 9px;
+  margin-top: 1px;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1279px) {
+    margin-top: 0px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-right: 30px;
+  }
+}
+
+.modal-pic {
+  width: 71%;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.modal-pic_img {
+  width: 100%;
+  height: 493px;
+  margin-left: -14px;
+  @media screen and (max-width: 1279px) {
+    height: 346px;
+  }
+}
+.modal-content {
+  width: 50%;
+  @media screen and (max-width: 1279px) {
+    width: 53%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.modal-window_title {
+  @include font($font-family1, normal, 400, 35px, 45.5px, $color7);
+  padding-top: 16px;
+  letter-spacing: 2.2px;
+  margin-bottom: 0px;
+  @media screen and (max-width: 1279px) {
+    margin-top: 12px;
+    padding-top: 0px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-left: 8px;
+  }
+}
+
+.modal-window_desc {
+  @include font($font-family1, normal, 400, 20px, 23px, $color7);
+  letter-spacing: 1px;
+  letter-spacing: 1.3px;
+  margin-top: 8px;
+  padding-bottom: 16px;
+  @media screen and (max-width: 1279px) {
+    padding-bottom: 0px;
+    margin-bottom: 21px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 23px;
+  }
+}
+.modal-window_text {
+  @include font($font-family1, normal, 400, 15.2px, 16.3px, $color7);
+  letter-spacing: 1px;
+  width: 99%;
+  @media screen and (max-width: 1279px) {
+    font-size: 13.2px;
+    line-height: 14.1px;
+  }
+  @media screen and (max-width: 767px) {
+    margin: auto;
+    width: 93%;
+  }
+}
+
+.modal-window__property {
+  margin-top: 42px;
+  @media screen and (max-width: 1279px) {
+    margin-top: 20px;
+    margin-left: 4px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 21px;
+    margin-left: 14px;
+  }
+}
+.modal-window__property_list {
+  padding-left: 0px;
+}
+.modal_item {
+  @include font($font-family1, normal, 400, 15px, 16.5px, $color7);
+  letter-spacing: 1px;
+  list-style-type: disc;
+  margin-left: 4%;
+  padding-bottom: 12px;
+  @media screen and (max-width: 1279px) {
+    padding-bottom: 7px;
+  }
+}
+.modal_item:last-child {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0px;
+    margin-bottom: -7px;
+  }
+}
+.property_list__title {
+  font-weight: 700;
+}
+.modal_item::marker {
+  color: #F1CDB3;
+}
+
+.dark-modal_active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 41, 41, 0.6);
+    z-index: 1;
+}
+.stop-scrolling_modal {
+    height: 100%;
+    overflow: hidden;
+}
